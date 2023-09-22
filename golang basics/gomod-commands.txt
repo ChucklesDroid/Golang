@@ -1,0 +1,9 @@
+To create go.mod:
+$ go mod init [host/usrororganization/project/(dirs)/package]
+
+To use a local version of the package defined in go.mod:
+$ go mod edit -replace <import path>=../<dir-name>
+//For this to work both packages need to be at the same level
+
+To syncrhonise missing dependencies and check validity of go mod files:
+$ go mod tidy
