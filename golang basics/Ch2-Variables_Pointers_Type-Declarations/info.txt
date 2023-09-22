@@ -1,0 +1,29 @@
+There are 4 types of declaration in go:
+1) Variable
+2) Type
+3) Constant
+4) Function
+
+Defining variables in golang: 
+syntax:- var name type = [value]
+
+//NOTE: While declaring either type or value can be missing but not both
+//for not instantiating the variable, there's a concept called zero value which handles that
+For Example-
+
+var integer int
+var integer = 8
+var integer int = 8
+// All are valid statements
+
+Declaring multiple variables together in one line:-
+var integer1, integer2 = 2, 23
+var integer, string = 2, "helloworld"
+
+Short Declaration:-
+We make use of ':=' for short declaration making use of only name and expression
+For Example:-
+syntax: name := expression
+
+integer := 8
+string := "aakarsh"

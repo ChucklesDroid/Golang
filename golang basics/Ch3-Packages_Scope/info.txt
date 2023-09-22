@@ -1,0 +1,14 @@
+There are 3 scopes in golang:
+1) Block
+2) Package
+3) Universe
+
+**We can have same package spread across diff files as long as the corncerned files have
+the same package name.
+
+**To import a variable across packages the naming should start with capital letter.
+
+** Also general practice is to have files belonging to same package under the same folder.
+
+**Specifying the import path for import custom packages:
+host/usrororganization/project/(dirs)/package
