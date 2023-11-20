@@ -3,13 +3,14 @@ package main
 import "fmt"
 
 func main() {
+syntax:
 	// var integer int
 	// fmt.Println(integer) //prints 0
 
 	// var integer = 1
 	// fmt.Println(integer) //prints 1
 
-	// short dedlaration
+	// short declaration
 	// integer := 1
 	// fmt.Println(integer) //prints 1
 
