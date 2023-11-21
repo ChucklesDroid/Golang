@@ -1,4 +1,4 @@
-# Motivation
+aa# Motivation
 To learn go and contribute to kyverno
 
 ## Introduction <a name="Para2"></a>
@@ -13,6 +13,7 @@ To learn go and contribute to kyverno
 6. [Variables](#Para6)
     1. [Short Variable Declaration](#Para6.1)
 7. [Basic Types](#Para7)
+    1. [Basic Types](#Para7.1)
 
 
 ## HelloWorld   <a name="Para3"></a>
@@ -66,3 +67,18 @@ Broadly speaking there are 6 major classes of basic types in go:
 4. float (`float32`, `float64`)
 5. Complex (`complex64`, `complex128`)
 6. Pointers (`uintpr`, `*int`, `*int8`, `*float64`, `*float128`, `*complex64`)
+
+**_NOTE_** 
+* The uintptr type is typically used in conjunction with unsafe pointers, which are pointers that bypass the type safety checks provided by Go's garbage collector. unsafe pointers are used for low-level memory manipulation tasks, such as accessing hardware registers or manipulating raw memory.
+
+### Zero Values <a name="Para7.1"></a>
+Variables declared without an explicit initial zero value are given zero value
+```
+For Example:
+Numeric types are given 0
+Boolean types are given false
+Strings are given ""
+```
+
+**_NOTE_**
+* Make use of `"%q"` in `fmt.printf()` method to achieve the same

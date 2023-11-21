@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math/cmplx"
 	"reflect"
 )
 
@@ -29,9 +30,10 @@ func main() {
 		f       float32   = 3.2
 		g       float64   = 32.2
 		h       complex64 = 1 + 2i
+		i       bool      = cmplx.IsNaN(complex128(h))
 	)
 
 	fmt.Println(boolean)
-	fmt.Print(a, b, c, d, e, f, g, h, "\n")
+	fmt.Print(a, b, c, d, e, f, g, h, i, "\n")
 	fmt.Println(reflect.TypeOf(e)) // To print variable type
 }
