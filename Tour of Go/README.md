@@ -82,3 +82,35 @@ Strings are given ""
 
 **_NOTE_**
 * Make use of `"%q"` in `fmt.printf()` method to achieve the same
+
+### Type Conversions
+Type conversion in Go are explicit and as such need to be specified
+```
+For Example:
+i int = 23
+f float = float(i)
+u uint = uint(f)
+```
+
+Example use case in `Basic Types/type_convo.go`
+
+### Constants
+* Constants can be declared using `const` keyword
+* Constants can be character, boolean, string or numeric values
+* Constants cannot be declared using `:=`
+
+```
+For Example:
+const truth = true
+const world = "hello"
+const pi = 3.14
+```
+
+### Numeric Constants
+Numeric constants represent exact values of arbitrary precision and do not flow.
+
+```
+For example:
+const a = 1 << 100
+fmt.Println(a)  // Cannot print since it overflows but we can store it inside a numeric constant
+```
