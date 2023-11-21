@@ -1,4 +1,4 @@
-aa# Motivation
+aaa# Motivation
 To learn go and contribute to kyverno
 
 ## Introduction <a name="Para2"></a>
@@ -13,7 +13,11 @@ To learn go and contribute to kyverno
 6. [Variables](#Para6)
     1. [Short Variable Declaration](#Para6.1)
 7. [Basic Types](#Para7)
-    1. [Basic Types](#Para7.1)
+    1. [Zero Values](#Para7.1)
+    2. [Type Conversion](#Para7.2)
+    3. [Constants](#Para7.3)
+    4. [Numeric Constants](#Para7.4)
+8. [Flow Control](#Para8)
 
 
 ## HelloWorld   <a name="Para3"></a>
@@ -83,7 +87,7 @@ Strings are given ""
 **_NOTE_**
 * Make use of `"%q"` in `fmt.printf()` method to achieve the same
 
-### Type Conversions
+### Type Conversions <a name="Para7.2"></a>
 Type conversion in Go are explicit and as such need to be specified
 ```
 For Example:
@@ -94,7 +98,7 @@ u uint = uint(f)
 
 Example use case in `Basic Types/type_convo.go`
 
-### Constants
+### Constants   <a name="Para7.3"></a>
 * Constants can be declared using `const` keyword
 * Constants can be character, boolean, string or numeric values
 * Constants cannot be declared using `:=`
@@ -106,7 +110,7 @@ const world = "hello"
 const pi = 3.14
 ```
 
-### Numeric Constants
+### Numeric Constants   <a name="Para7.4"></a>
 Numeric constants represent exact values of arbitrary precision and do not flow.
 
 ```
@@ -114,3 +118,5 @@ For example:
 const a = 1 << 100
 fmt.Println(a)  // Cannot print since it overflows but we can store it inside a numeric constant
 ```
+
+## Flow Control <a name="Para8"></a>
