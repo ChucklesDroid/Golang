@@ -1,5 +1,5 @@
 # Motivation 
-To learn go and contribute to Kyverno
+Documenting my journey learning golang to keep myself accountable
 
 ## Introduction <a name="Para2"></a>
 
